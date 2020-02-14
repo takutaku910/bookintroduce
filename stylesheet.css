@@ -1,52 +1,115 @@
-.title {
-  color: #000000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-.header {
-  background-color: #ffc0cb;
-  height: 90px;
+a {
+  text-decoration: none;
 }
-
-
-
-.container {
-  width: 1170px;
-  padding: 0 15px;
+ul, ol {
+  list-style: none;
+}
+html {
+  font-family: verdana, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+h1, h2, h3, h4 {
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 2;
+}
+h2, h3, h4 {
+  font-size: 24px;
+  line-height: 1;
+}
+header {
+  text-align: center;
+  padding-top: 24px;
+  background: #ffebcd;
+  width: 960px;
   margin: 0 auto;
 }
 
-
-.header-logo {
-  font-size:36px;
-  float:left;
-  padding: 20px 40px;
+nav {
+  background-color: #142E4D;
+}
+nav ul {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden; /*  clearfix */
+}
+nav ul li {
+  width: 25%;
+  float: left;
+}
+nav ul li a {
+  display: block;
+  /*アニメ、小説の文字の色*/
+  color: #B3BDF6;
+  padding: 12px 0;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: #1E81A4;/*  カーソルを当てたら色変更*/
+}
+.contents {
+  overflow: hidden; /*  clearfix */
+  width: 960px;
+  margin: 0 auto;
 }
 
-.header-list li {
-  list-style: none;
-  float:left;
+.container {
+  display: flex;
+  margin: 40px auto 0;
+  width: 1300px;
+  max-width: 1560px;
+  min-width: 600px;
+  position: relative;
+}
+.main, .side {
+  float: left;
   padding: 30px 20px;
 }
-
-
-
 .main {
-  background-color: #bdf7f1;
-  height: 600px;
+  width: 1200px;
+  background: #ffebcd;
+   /*  メインの背景 */
 }
 
 
-.right-menu {
-  float:right;
-  font-size: 20px;
+.side {
+  width: 400px;
+  background-color: #eaff00;
+  margin-bottom: -999999px;
+  padding-bottom: 999999px;
+  overflow: hidden;
+}
+.side1 {
+  flex: 0 0 240px;
+  order: -1;
+}
+.side2 {
+  flex: 0 0 180px;
+  width: 300px;
+}
+.main, .side1, .side2 {
+  padding: 2%;
 }
 
-.footer {
-  background-color: #ceccf3;
-  height: 270px;
+.contents p {
+  margin-bottom: 24px;
+  text-align: left;
+  color: #eaff00;
 }
-
-.title {
-  border-bottom:5px solid #000000;
+footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 48px 0;
+  text-align: center;
+  background: #999;
 }
