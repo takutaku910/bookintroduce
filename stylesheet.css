@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
 }
+
 ul, ol {
   list-style: none;
 }
@@ -66,7 +67,7 @@ nav ul li a:hover {
 .container {
   display: flex;
   margin: 40px auto 0;
-  width: 1300px;
+  width: 1500px;
   max-width: 1560px;
   min-width: 600px;
   position: relative;
@@ -76,14 +77,19 @@ nav ul li a:hover {
   padding: 30px 20px;
 }
 .main {
-  width: 1200px;
+  width: 1500px;
   background: #ffebcd;
    /*  メインの背景 */
 }
 
+.sabaku{
+  border-bottom: dashed 1px #87CEFA;
+  font-size: 50px;
+}
+
 
 .side {
-  width: 400px;
+  width: 600px;
   background-color: #eaff00;
   margin-bottom: -999999px;
   padding-bottom: 999999px;
